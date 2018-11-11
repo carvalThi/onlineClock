@@ -1,6 +1,9 @@
 {
   "name": "online-clock",
   "version": "1.0.0",
+  "engines": {
+    "node": "6.11.2"
+  },
   "description": "Online clock inspired by Daniel Shiffman",
   "main": "index.html",
   "scripts": {
