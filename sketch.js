@@ -5,8 +5,8 @@
 // Clock
 // Video: https://youtu.be/E4RyStef-gY
 
-var w = screen.width;
-var h = screen.height;
+var w = window.innerWidth;
+var h = window.innerHeight;
 var fontsize = h / 15;
 var font;
 var refRadius = 2 * Math.floor(Math.min(w / 3, h / 2) * 0.75)
