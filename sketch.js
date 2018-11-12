@@ -63,7 +63,8 @@ function draw() {
 
 	stroke(0, 172, 172);
 	let hourAngle = map(hr % 12, 0, 12, 0, 360);
-	arc(0, 0, refRadius - 80, refRadius - 80, 0, hourAngle);
+	let hourAngleArc = map(hr % 24, 0, 12, 0, 360);
+	arc(0, 0, refRadius - 80, refRadius - 80, 0, hourAngleArc);
 
 	stroke(254, 241, 3);
 	let dayAngle = map(dy % getModDay(mt, yr), 0, getModDay(mt, yr), 0, 360);
@@ -76,7 +77,7 @@ function draw() {
 	push();
 	rotate(secondAngle);
 	stroke(237, 64, 60);;
-	line(0, 0, (refRadius - 120) / 2 * 0.85, 0);
+	line(0, 0, (refRadius - 120) / 2 * 0.8, 0);
 	pop();
 
 	push();
