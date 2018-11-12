@@ -5,8 +5,8 @@
 // Clock
 // Video: https://youtu.be/E4RyStef-gY
 
-var w = windowWidth;
-var h = windowHeight;
+var w = window.innerWidth;
+var h = window.innerHeight;
 var fontsize = h / 15;
 var font;
 var refRadius = 2 * Math.floor(Math.min(w / 3, h / 2) * 0.75)
@@ -142,7 +142,3 @@ function getWeekNumber() {
 	var yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
 	return Math.ceil((((d - yearStart) / 86400000) + 1) / 7)
 };
-
-function windowResized() {
-	resizeCanvas(windowWidth, windowHeight);
-  }
