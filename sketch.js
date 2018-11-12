@@ -21,6 +21,9 @@ function setup() {
 	createCanvas(w, h);
 	angleMode(DEGREES);
 	textFont(font);
+	var canvas = document.getElementById('canvas');
+    canvas.width = document.body.clientWidth;
+    canvas.height = document.body.clientHeight;
 }
 
 function draw() {
