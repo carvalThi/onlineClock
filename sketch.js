@@ -142,3 +142,11 @@ function getWeekNumber() {
 	var yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
 	return Math.ceil((((d - yearStart) / 86400000) + 1) / 7)
 };
+
+function windowResized() {
+	w = window.innerWidth;
+	h = window.innerHeight;
+	fontsize = h / 15;
+	refRadius = 2 * Math.floor(Math.min(w / 3, h / 2) * 0.75)
+	resizeCanvas(w, h);
+}
